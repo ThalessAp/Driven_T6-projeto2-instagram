@@ -3,12 +3,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-color: lightblue;
-
-}
-
-bold{
+bold {
     font-weight: bold;
 }
 
@@ -27,23 +22,26 @@ header {
     width: 100%;
     z-index: 3;
 }
+
 header div {
     display: flex;
     align-items: center;
 }
+
 .holder {
     width: 2px;
     height: 30px;
     background-color: #e5e5e5;
     margin: 0 10px;
 }
+
 .search {
     align-items: center;
     width: 300px;
 }
 
-main{
-    display: flex;    
+main {
+    display: flex;
     justify-content: center;
     top: 20px;
 
@@ -61,13 +59,14 @@ main{
     overflow-x: hidden;
     position: relative;
 }
+
 .stories ion-icon {
     position: absolute;
     font-size: 26px;
-    color: #fff;
+    color: rgb(247, 247, 247);
     z-index: 2;
     right: 9px;
-
+    border-radius: 50%;
 }
 
 .storie {
@@ -75,17 +74,21 @@ main{
     margin-left: 16px;
     align-content: center;
 }
+
 .storie img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+
 .storie-image :first-child {
     position: absolute;
-    padding: 3px;; 
+    padding: 3px;
+    ;
     z-index: 1;
 }
-.storie span{
+
+.storie span {
     font-size: small;
 }
 
@@ -97,14 +100,16 @@ main{
     width: 614px;
     background-color: #fff;
 }
-.post{
+
+.post {
     background-color: #fff;
     margin-bottom: 60px;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     margin-bottom: 60px;
 }
-.post-top{
+
+.post-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,14 +117,16 @@ main{
     width: 100%;
     padding: 0px 15px;
 }
+
 .post-top .user {
     display: flex;
     align-items: center;
-
 }
-.post-bottom{
+
+.post-bottom {
     padding: 0px 15px;
 }
+
 .post-bottom .icons-bottom {
     display: flex;
     justify-content: space-between;
@@ -129,28 +136,41 @@ main{
     margin-top: 10px;
 }
 
-aside{
-    margin-left: 30px;
-    width: 293px;    
+.box-likes {
+    margin-bottom: 15px;
 }
-aside h2{
+
+aside {
+    margin-left: 30px;
+    width: 293px;
+    position: sticky;
+    top: 88px;
+    height: fit-content;
+}
+
+aside h2 {
     font-weight: bold;
     font-size: 14px;
 }
-aside h5{
+
+aside h5 {
     font-weight: 300;
     font-size: 14px;
     color: #8E8E8E;
 }
-.profile{
+
+.profile {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    top: 88px;
 }
-.profile img{
+
+.profile img {
     margin-right: 17px;
 }
-.space-holder{
+
+.space-holder {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -158,20 +178,24 @@ aside h5{
     font-size: 12px;
     color: #262626;
 }
-.suggestion-box{
+
+.suggestion-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;    
+    width: 100%;
     margin-bottom: 15px;
 }
-.suggestion-name{
+
+.suggestion-name {
     display: flex;
 }
-.suggestion-name img{
+
+.suggestion-name img {
     margin-right: 17px;
 }
-.suggestion-buttom h4{
+
+.suggestion-buttom h4 {
     font-size: 12px;
     font-weight: bold;
     color: #139EF2;
@@ -182,17 +206,18 @@ aside h5{
     display: none;
 }
 
-@media(max-width:935px){
-    aside{
+@media(max-width:935px) {
+    aside {
         display: none;
     }
 }
 
-@media(max-width: 614px){
-    .hide-mobile{
+@media(max-width: 614px) {
+    .hide-mobile {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: initial;
         display: flex;
         justify-content: space-around;
@@ -203,8 +228,13 @@ aside h5{
     header {
         justify-content: space-around;
     }
-    header .mobile{
+
+    header .mobile {
         height: 29px;
+    }
+
+    section {
+        width: 100%;
     }
 
     .stories {
@@ -217,15 +247,19 @@ aside h5{
         width: 100%;
         object-fit: contain;
     }
+
     .post {
         width: 100%;
-    }   
-    
-    footer{
+    }
+
+    .post-image img {
+        max-width: 100%;
+    }
+
+    footer {
         position: sticky;
         bottom: 0px;
         width: 100%;
         background-color: #fff;
-    
     }
 }
